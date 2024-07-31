@@ -1,0 +1,66 @@
+# Bazel build output directories
+bazel-*
+
+# Compiled source files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Python compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# C++ build artifacts
+*.out
+*.a
+*.d
+*.dSYM/
+*.lo
+*.la
+*.al
+*.libs
+*.so
+*.swp
+*.swo
+*.o
+*.obj
+*.elf
+*.pyc
+*.pdb
+*.ilk
+
+# Backup files
+*~
+*.bak
+*.swp
+*.swo
+.DS_Store
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+
+# Python virtual environment
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Docker
+*.container
+
+# Misc
+*.lock
