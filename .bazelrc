@@ -1,0 +1,27 @@
+# Enable Bzlmod for every Bazel command
+common --enable_bzlmod
+
+# Enable verbose output
+build --verbose_failures
+
+# Enable C++ compilation warnings
+build --cxxopt='-Wall'
+build --cxxopt='-Werror'
+
+# Enable Python 3
+build --python_version=PY3
+
+# Python-specific settings
+build --action_env=PYTHON_BIN_PATH=/usr/bin/python3
+
+# Enable remote caching (example)
+#build --remote_cache=https://example-remote-cache.com
+
+# Configure the build event service (example)
+#build --bes_backend=grpc://example-build-event-service.com
+
+# Custom configurations for JupyterLab
+build --define=JUPYTERLAB=yes
+
+# Specifying specific build options for certain targets (example)
+build:jupyter_lab --spawn_strategy=standalone

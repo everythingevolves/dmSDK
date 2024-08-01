@@ -1,0 +1,11 @@
+load("@rules_python//python:defs.bzl", "py_binary")
+load("@notebooks//:requirements.bzl", "requirement")
+
+py_binary(
+    name = "jupyter_lab",
+    srcs = ["jupyter_lab.py"],
+    deps = [
+        "//ngs:hello_world",
+        requirement("jupyterlab"),
+    ],
+)
